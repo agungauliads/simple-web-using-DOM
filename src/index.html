@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="/dist/output.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <title>My DOM Web</title>
+</head>
+
+<body class="bg-login bg-center bg-no-repeat bg-cover">
+    <div class="h-screen w-full flex justify-center items-center">
+        <div class="border-2 border-solid border-blue-400 p-5 bg-gray-500 bg-opacity-50 rounded-lg">
+            <form onsubmit="signup()">
+                <div class="flex flex-col justify-center gap-3">
+                    <h1 class="font-Poppins font-extrabold leading-3 text-lg text-opacity-80 text-gray-800">Register
+                        Page</h1>
+                    <input class="p-3 border border-transparent rounded-md" type="text" id="email"
+                        placeholder="email" />
+                    <input class="p-3 border border-transparent rounded-md" type="text" id="username"
+                        placeholder="username" />
+                    <input class="p-3 border border-transparent rounded-md" type="password" id="password"
+                        placeholder="password" />
+                    <div class="flex justify-center">
+                        <button class="p-3 rounded-md bg-gray-800 bg-opacity-80 font-Poppins text-white"
+                            type="submit">
+                            Daftar
+                        </button>
+                    </div>
+                </div>
+                <p class="font-Poppins">Saya udah punya akun bang langsung -><a href="../src/loginPage.html" class="text-lg font-bold font-Poppins text-red-600 bg-yellow-400">Login</a><- aja lah</p>
+            </form>
+        </div>
+    </div>
+    <script src="./app.js"></script>
+</body>
+
+</html>
