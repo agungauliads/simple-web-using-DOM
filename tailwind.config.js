@@ -4,7 +4,7 @@ module.exports = {
   theme: {
     extend: {
       backgroundImage: {
-        'login': "url('../public/asset/2828921.jpg')"
+        'login': "url('../public/asset/banner.jpg')"
       },
       fontFamily: {
         Poppins: ["Poppins", "sans-serif"],
