@@ -1,1 +1,2 @@
 individual assignment using html-tailwind-javascript-localstorage
+jalankan file index terlebih dahulu supaya alurnya dapet hehe

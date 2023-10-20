@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="/dist/output.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <title>My DOM Web</title>
+</head>
+
+<body class="bg-gray-800">
+    <div class="container flex-row justify-center items-center mx-auto">
+        <h1 class="font-Poppins text-3xl font-bold text-white my-5">Selamat datang di web
+            kumpulan resep</h1>
+        <div class="mb-5">
+            <div class="row">
+                <div class="flex-col flex mb-3 font-Poppins text-white">
+                    <label for="judul">Judul</label>
+                    <input type="text" name="judul" class="text-black pl-1 rounded-sm" id="judul"
+                        placeholder="masukan judul..">
+                </div>
+                <div class="flex-col flex mb-3 font-Poppins text-white">
+                    <label for="bahan">Bahan</label>
+                    <input type="text" name="bahan" class="text-black pl-1 rounded-sm" id="bahan"
+                        placeholder="list bahan..">
+                </div>
+                <div class="flex-col flex mb-3 font-Poppins text-white">
+                    <label for="cara">Cara</label>
+                    <textarea name="cara" id="cara" cols="20" rows="7" class="text-black pl-1 rounded-sm"
+                        placeholder="tuliskan step by step nya.."></textarea>
+                </div>
+                <div class="flex-col flex mb-3 font-Poppins text-white">
+                    <label for="urlImg">url Image</label>
+                    <input type="text" name="urlImg" class="text-black pl-1 rounded-sm" id="urlImg"
+                        placeholder="masukan url..">
+                </div>
+                <div class="columns-lg mt-9">
+                    <button class="bg-green-600 rounded-md p-2 text-white" id="submit" onclick="addResep()">Add
+                        Resep</button>
+                    <button class="bg-blue-600 rounded-md p-2 text-white" id="update">Update</button>
+                </div>
+            </div>
+        </div>
+        <hr class="border">
+        <div class="flex flex-row mt-9">
+            <div class="col-span-12">
+                <table id="crudTable" class="shadow-lg bg-transparent table-auto border-2 border-solid col-span-12">
+                    <thead>
+                        <tr>
+                            <th class="bg-gray-700 border text-left px-8 py-4">Judul</th>
+                            <th class="bg-gray-700 border text-left px-8 py-4">Bahan</th>
+                            <th class="bg-gray-700 border text-left px-8 py-4">Cara</th>
+                            <th class="bg-gray-700 border text-left px-8 py-4">Url</th>
+                            <th class="bg-gray-700 border text-left px-8 py-4">Action</th>
+                        </tr>
+                    </thead>
+                </table>
+            </div>
+        </div>
+    </div>
+    <script src="./app.js"></script>
+</body>
+
+</html>
