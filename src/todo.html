@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="/dist/output.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <title>My DOM Web</title>
+</head>
+
+<body class="bg-gray-800 ">
+    <div class="mx-auto gap-3 flex-row justify-center items-center content-center">
+        <h1 class="font-Poppins font-bold text-gray-300">ToDo Resep</h1>
+        <div class="">
+            <input class="text-black" type="text" id="inputResep" placeholder="tambah resep baru..">
+            <button onclick="tambahResep()" class="bg-blue-600 rounded-md p-2">Tambah</button>
+        </div>
+        <ul id="daftarResep"></ul>
+        <a href="home.html"><button class="bg-purple-600 rounded-md p-2 text-white mt-1">Back</button></a>
+    </div>
+    <script src="todo.js"></script>
+</body>
+
+</html>
