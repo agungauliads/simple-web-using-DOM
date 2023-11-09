@@ -46,11 +46,11 @@ function validateForm() {
       html +=
         '<td><button onclick="deleteResep(' +
         index +
-        ')" class="bg-red-600 rounded-md p-2 text-white">Delete</button>';
+        ')" class="bg-red-600 hover:bg-red-800 rounded-md p-2 text-white">Delete</button>';
       html +=
         '<td><button onclick="updateResep(' +
         index +
-        ')" class="bg-yellow-600 rounded-md p-2 text-white">Edit</button>';
+        ')" class="bg-yellow-600 hover:bg-yellow-800 rounded-md p-2 text-white">Edit</button>';
     });
   
     document.querySelector("#crudTable tbody").innerHTML = html;
@@ -114,7 +114,7 @@ function validateForm() {
     document.getElementById("judul").value = listResep[index].judul;
     document.getElementById("bahan").value = listResep[index].bahan;
     document.getElementById("cara").value = listResep[index].cara;
-    document.getElementById("urlImg").value = listResep[index].imgUrl;
+    document.getElementById("urlImg").value = listResep[index].urlImg;
   
     document.querySelector("#update").onclick = function () {
       if (validateForm() == true) {
